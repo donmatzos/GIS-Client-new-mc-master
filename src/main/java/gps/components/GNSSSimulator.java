@@ -27,7 +27,6 @@ public class GNSSSimulator extends BufferedReader
     @Override
     public String readLine() throws IOException
     {
-
         String currentLine =  super.readLine();
         if (currentLine != null && currentLine.contains(filter))
         {

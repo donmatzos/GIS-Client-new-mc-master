@@ -33,7 +33,7 @@ public class GPSSimulator extends Application
         timePane.setStyle("-fx-background-color: yellow;");
         timePane.setAlignment(Pos.CENTER);
         FlowPane paneData = new FlowPane();
-        paneData.setStyle("-fx-background-color: blue;");
+        paneData.setStyle("-fx-background-color: lightblue;");
         root.topProperty().setValue(timePane);
         root.bottomProperty().setValue(paneData);
 

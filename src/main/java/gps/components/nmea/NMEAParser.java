@@ -19,9 +19,10 @@ public class NMEAParser extends NMEAObserver
     private NMEAInfo currentInfo;
 
     public NMEAParser() {
+        String path = "./src/main/resources/sat/NMEA-hgb-static-gps.nmea";
         try
         {
-            simulator = new GNSSSimulator("resources/nmea/NMEA-hgb-static-gps.nmea", 1000, "$GPGGA");
+            simulator = new GNSSSimulator(path, 1000, "$GPGGA");
             oldInfo = new NMEAInfo();
             currentInfo = new NMEAInfo();
         }
